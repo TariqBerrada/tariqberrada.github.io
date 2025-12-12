@@ -15,12 +15,16 @@ body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
+  
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern"1;
   -moz-font-feature-settings: "kern"1;
   -o-font-feature-settings: "kern"1;
   font-feature-settings: "kern"1;
   font-kerning: normal;
+}
+body {
+  background: #f5f5f7;   /* light grey / off-white */
 }
 
 /**
@@ -75,16 +79,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #000000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1756a9;
+  color: #000000;
 }
 
 a:hover {
-  color: #111;
+  color: #2a3a1e;
   text-decoration: underline;
 }
 
@@ -170,16 +174,6 @@ pre>code {
 
 .icon>svg path {
   fill: #828282;
-}
-
-/**
- * Site header
- */
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  position: relative;
 }
 
 .site-title {
@@ -746,4 +740,528 @@ ul.publications .oral {
 
 .highlight .il {
   color: #099;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Add dividers between main sections */
+/* .main-content .section {
+  padding-top: 1.75rem;
+  margin-top: 0.0rem;
+  border-top: 1px solid #e3e3e3;  /* adjust color to taste */
+/* } */
+
+/* Don’t draw a line above the very first section (About) */
+/* .main-content .section:first-of-type {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+} */
+
+.highlight {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  background: #fff6f4;
+  border: 1px solid #ffd5c7;
+  font-size: 0.95rem;
+}
+
+
+
+.nav-bar {
+  background: #fdecee;               /* pink band */
+  border-bottom: 1px solid #e3e3e3;
+  border-radius: 0 0 8px 8px;
+  margin: 0 -24px;                   /* cancel wrapper's 24px padding */
+  padding: 0.8rem 2.5rem;            /* inner padding for title + links */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.nav-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* THIS pushes the whole block of links to the right */
+.nav-links {
+  margin-left: auto;           /* pushes links to the right */
+  display: flex;               /* puts links on one row */
+  align-items: center;
+  justify-content: flex-end;   /* right-align inside the bar */
+  gap: 1.5rem;                 /* space between links */
+  white-space: nowrap;         /* prevent wrapping to a new line */
+}
+
+
+.nav-links a {
+  margin-left: 1.5rem;   /* spacing between About / Publications / CV / Talks */
+  text-decoration: none;
+}
+
+.nav-links a,
+.sidebar-links a {
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.nav-links a:hover,
+.sidebar-links a:hover {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+
+/* Two-column layout */
+.layout {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.sidebar {
+  flex: 0 0 210px;   /* was 260px */
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1.5rem;
+  
+}
+
+.article .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: #eef2ff;
+}
+.article .year {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+
+
+.pub-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.pub-header .title {
+  flex: 1;             /* title takes remaining space */
+  font-style: italic;  /* if you had this before */
+}
+
+.tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #eef0ff;
+  color: #555;
+  white-space: nowrap;
+}
+
+
+/* keep top bar visible */
+.site-header {
+  border-top: 5px solid #424242;  /* or remove if you don't want it */
+  min-height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f5f5f7;   /* same as body, so the edges are grey */
+  border-bottom: none;
+}
+
+/* keep sidebar visible on scroll (desktop) */
+.sidebar {
+  position: sticky;
+  top: 4.5rem;           /* just below the header */
+}
+
+
+
+.sidebar-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+
+  border: 2px solid #2a3a1e;
+  /* optional extras: */
+  padding: 3px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.12);
+}
+
+/* small icons */
+.sidebar-links li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+
+
+.sidebar-name {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.sidebar-role {
+  margin-bottom: 0.15rem;
+}
+
+
+
+.sidebar-meta,
+.sidebar-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.8rem 0;
+}
+
+.sidebar-meta li {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.sidebar-links li {
+  margin-bottom: 0.2rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+/* .section h1 {
+  margin-top: 0;
+} */
+
+/* Section titles: About / Education / Selected Research */
+.section > h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #333;
+  margin: 0 0 1rem 0;
+  position: relative;
+}
+
+/* Colored bar under each title */
+.section > h1::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 3px;
+  border-radius: 999px;
+  background: #e6a7a6;  /* matches your pink theme; tweak if needed */
+  margin-top: 0.5rem;
+}
+
+
+/* Publications list (reuse existing styles if you have them) */
+.publications {
+  list-style: none;
+  padding-left: 0;
+}
+
+.article {
+  margin-bottom: 1.2rem;
+}
+
+.article .title {
+  font-weight: 600;
+  display: block;
+}
+
+.article .authors,
+.article .journal-info,
+.article .year,
+.article .links {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.article .links a {
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+.footer-inner {
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* Mobile: stack sidebar on top */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid #e3e3e3;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
+.wrapper {
+  max-width: 1100px;   /* or whatever you use */
+  margin: 0 auto;
+}
+
+/* central card */
+.layout {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  padding: 2rem 2.5rem;
+  margin: 0.0rem auto 2.5rem;
+}
+
+
+.sidebar-section-title {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #777;
+  border-top: 1px solid #e3e3e3;  /* this is the separator line */
+}
+
+
+/* -----------------------------------
+   Mobile tweaks
+   ----------------------------------- */
+@media (max-width: 768px) {
+  /* Slightly smaller base text */
+  body {
+    font-size: 14px;
+  }
+
+  /* Top bar */
+  .nav-bar {
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-title {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+    gap: 1rem;
+    justify-content: flex-end;   /* keep them right-aligned */
+    white-space: nowrap;         /* extra safety against wrapping */
+  }
+
+  /* Card layout */
+  .layout {
+    flex-direction: column;
+    padding: 1.25rem 1.25rem 2rem;
+    margin-top: 1rem;
+    border-radius: 0;          /* optional: makes it feel more “native” */
+    box-shadow: none;          /* lighter look on phones */
+  }
+
+  /* Sidebar on top, centered */
+  .sidebar {
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  .sidebar-picture {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+  }
+
+  .sidebar-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .sidebar-role,
+  .sidebar-meta li,
+  .sidebar-links li {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-links {
+    align-items: center;
+  }
+
+  .sidebar-meta {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.8rem 0 1.1rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.6rem 0 0;
+  }
+
+  .sidebar-links-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #777;
+    margin-bottom: 0.4rem;
+  }
+
+  /* existing, but tuned a bit tighter */
+  .sidebar-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+  }
+
+
+
+
+
+  
+  /* Tighten vertical spacing for sidebar text blocks */
+  .sidebar-role,
+  .sidebar-summary,
+  .sidebar-location {
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+  }
+
+
+  /* Separator before “Profiles & Contact” */
+  .sidebar-section-title {
+    font-size: 0.72rem;
+  }
+
+  /* Keep links visually grouped below the heading */
+  .sidebar-links {
+    margin-top: 0.4rem;
+  }
+
+
+
+  .sidebar-icon {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+  }
+
+  /* Main content */
+  .main-content {
+    padding-left: 0;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .section > h1 {
+    font-size: 1.1rem;
+    letter-spacing: 0.12em;
+  }
+
+  .section > h1::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  /* Publications text a bit smaller so they fit nicely */
+  .publications .title {
+    font-size: 1rem;
+  }
+
+  .article .authors,
+  .article .journal-info,
+  .article .links {
+    font-size: 0.9rem;
+  }
+
+  
+}
+
+/* Sidebar text spacing (desktop + mobile) */
+.sidebar-role,
+.sidebar-summary,
+.sidebar-location {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;   /* much tighter than the global 12px */
+}
+
+/* A bit more breathing room below the location line before links */
+.sidebar-location {
+  margin-bottom: 0.6rem;
+}
+
+.sidebar-location {
+  margin-top: 0.1rem;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+.section + .section {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1.75rem;
 }
