@@ -773,8 +773,8 @@ html {
 
 
 .nav-bar {
-  background: #fdecee;               /* pink band */
-  border-bottom: 1px solid #e3e3e3;
+  background: #fff6f4;               /* pink band */
+  border-bottom: 1px solid #ffd5c7;
   border-radius: 0 0 8px 8px;
   margin: 0 -24px;                   /* cancel wrapper's 24px padding */
   padding: 0.8rem 2.5rem;            /* inner padding for title + links */
