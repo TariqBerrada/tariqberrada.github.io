@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tariq's website</title>
+  <meta name="description"
+        content="PhD candidate at Meta AI & Inria Grenoble working on diffusion and flow-based generative models for image and video.">
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- Top navigation bar -->
+  <header class="site-header" role="banner">
+    <div class="wrapper nav-bar">
+      <div class="nav-title">Tariq Berrada Ifriqi</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Publications</a>
+        <!-- <a href="./pdfs/tariqberrada_cv.pdf" target="_blank">CV</a> -->
+        <!-- <a href="./slides/index.html">Talks</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main layout: sidebar + content -->
+  <div class="wrapper layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="./headshot.jpg" class="sidebar-picture" alt="Portrait of Tariq Berrada Ifriqi">
+
+      <h2 class="sidebar-name">Tariq Berrada Ifriqi</h2>
+      <p class="sidebar-role">
+        <strong>PhD candidate (CIFRE)</strong><br>
+        FAIR at Meta &amp; Inria (THOTH)
+      </p>
+
+      <!-- <p class="sidebar-summary">
+        Generative models, diffusion &amp; flows.
+      </p> -->
+      <p class="sidebar-location">
+        📍 Paris, France.
+      </p>
+
+      <!-- separator + small heading -->
+      <h3 class="sidebar-section-title">Profiles &amp; Contact</h3>
+
+      <ul class="sidebar-links">
+        <li>
+          <img class="sidebar-icon" src="./icons/scholar.png" alt="">
+          <a href="https://scholar.google.com/citations?user=StQIGq8AAAAJ" target="_blank">
+            Google Scholar
+          </a>
+        </li>
+        <li>
+          <img class="sidebar-icon" src="./icons/github-mark.svg" alt="">
+          <a href="https://github.com/TariqBerrada" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <img class="sidebar-icon" src="./icons/linkedin.png" alt="">
+          <a href="https://www.linkedin.com/in/tariq-berrada-2026a2186/" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <img class="sidebar-icon" src="./icons/email.png" alt="">
+          <a href="mailto:tariqbrrd909@gmail.com">Contact</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Main content -->
+    <main class="main-content">
+
+      <!-- About -->
+      <section id="about" class="section">
+        <h1>About</h1>
+        <p>
+          I'm a PhD candidate (CIFRE) at
+          <strong>
+            <a href="https://ai.meta.com/research/" target="_blank" rel="noopener">
+              Meta AI (FAIR)
+            </a>
+          </strong>
+          and
+          <strong>
+            <a href="https://team.inria.fr/thoth/" target="_blank" rel="noopener">
+              Inria Grenoble (THOTH)
+            </a>
+            /
+            <a href="https://www.univ-grenoble-alpes.fr/english/" target="_blank" rel="noopener">
+              Université Grenoble Alpes (UGA)
+            </a>
+          </strong>.
+          <br>
+          I am co-advised by Karteek Alahari (Inria) and Jakob Verbeek (Meta).
+          I specialize in <strong>diffusion- and flow-based generative models</strong> for large-scale image and
+          video generation.
+        </p>
+        <p>
+          Before my PhD, I completed the
+          <a href="https://www.master-mva.com"
+            target="_blank" rel="noopener noreferrer">
+            <strong>MVA master’s program</strong>
+          </a>
+          in applied mathematics and machine learning, and an M.Sc.-level engineering degree
+          (<em>Diplôme d’ingénieur</em>) with a major in
+          <a href="https://www.centralesupelec.fr/catalogue-de-formations/dominante-mathematique-et-datascience"
+            target="_blank" rel="noopener noreferrer">
+            <strong>Data and Information Sciences – Mathematics and Data Science (SDI–MDS)</strong>
+          </a>
+          at
+          <a href="https://www.centralesupelec.fr/"
+            target="_blank" rel="noopener noreferrer">
+            <strong>CentraleSupélec</strong>
+          </a>.
+        </p>
+
+        <p>
+          My research focuses on developing <strong>training and sampling algorithms</strong> to obtain more efficient, flexible and
+          controllable generative models, with applications on image, video and multimodal generation.
+          I expect to graduate around March–April 2026.
+        </p>
+        <p class="highlight">
+          ⚠️ Open to <strong>Research Scientist</strong> positions in generative modeling and related topics starting Spring/Summer 2026.
+        </p>
+      </section>
+
+      <section id="education" class="section">
+        <h1>Education</h1>
+        <ul class="edu-list">
+          <li>
+            <strong>PhD (CIFRE), Computer Science</strong><br>
+            Meta AI (FAIR) & Inria Grenoble / Université Grenoble Alpes  
+            <span class="edu-dates">2023 – present (expected Mar–Apr 2026)</span>
+          </li>
+          <li>
+            <strong>M2 – Mathematics, Vision, Learning (MVA)</strong><br>
+            ENS Paris-Saclay  
+            <span class="edu-dates">2021 – 2022</span>
+          </li>
+          <li>
+            <strong>M.Sc.-level engineering degree (Diplôme d’ingénieur)</strong><br>
+            CentraleSupélec – major in Data and Information Sciences – Mathematics and Data Science (SDI–MDS)  
+            <span class="edu-dates">2018 – 2022</span>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <!-- Selected research -->
+      <section id="research" class="section">
+        <h1>Selected Research</h1>
+        <ul class="publications">
+
+          <li class="article">
+            <div class="pub-header">
+              <span class="title">
+                Flowception: Temporally Expansive Flow Matching for Video Generation
+              </span>
+              <span class="tag">FIRST AUTHOR</span>
+            </div>
+
+            <span class="authors">
+              <strong>Tariq Berrada Ifriqi</strong>, John Nguyen, Karteek Alahari, Jakob Verbeek, Ricky T. Q. Chen
+            </span>
+            <span class="journal-info">Preprint.</span>
+            <span class="year">2025</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2512.11438">arxiv</a> |
+              <a href="https://flowception-meta.github.io/">site</a>
+            </span>
+          </li>
+
+
+          <li class="article">
+            <span class="title">
+              OneFlow: Concurrent Mixed-Modal and Interleaved Generation with Edit Flows
+            </span>
+            <span class="authors">
+              John Nguyen, Marton Havasi, <strong>Tariq Berrada</strong>, Luke Zettlemoyer, Ricky T. Q. Chen
+            </span>
+
+            <span class="journal-info">Preprint.</span>
+            <span class="year">2025</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2510.03506">arxiv</a> |
+              <a href="https://oneflow.framer.ai/">site</a>
+            </span>
+          </li>
+
+          <li class="article">
+            <div class="pub-header">
+              <span class="title">
+                Entropy Rectifying Guidance for Diffusion and Flow Models
+              </span>
+              <span class="tag">FIRST AUTHOR</span>
+            </div>
+            <span class="authors">
+              <strong>Tariq Berrada</strong>, Adriana Romero-Soriano, Michal Drozdzal,
+              Jakob Verbeek, Karteek Alahari
+            </span>
+            <span class="journal-info">
+              
+              Advances in Neural Information Processing Systems (NeurIPS).
+            </span>
+            <span class="year">2025</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2504.13987">arxiv</a>
+            </span>
+          </li>
+
+          <li class="article">
+            <div class="pub-header">
+              <span class="title">
+                Boosting Latent Diffusion with Perceptual Objectives
+              </span>
+              <span class="tag">FIRST AUTHOR</span>
+            </div>
+            <span class="authors">
+              <strong>Tariq Berrada</strong>, Pietro Astolfi, Melissa Hall, Marton Havasi, Yohann Benchetrit,
+              Adriana Romero-Soriano, Karteek Alahari, Michal Drozdzal, Jakob Verbeek
+            </span>
+            <span class="journal-info">
+              International Conference on Learning Representations (ICLR).
+            </span>
+            <span class="year">2025</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2411.04873">arxiv</a>
+            </span>
+          </li>
+
+          <li class="article">
+            <span class="title">
+              EvalGIM: A Library for Evaluating Generative Image Models
+            </span>
+            <span class="authors">
+              Melissa Hall, Oscar Mañas, Reyhane Askari-Hemmat, Mark Ibrahim, Candace Ross,
+              Pietro Astolfi, <strong>Tariq Berrada Ifriqi</strong>, Marton Havasi, Yohann Benchetrit,
+              Karen Ullrich, Carolina Braga, Abhishek Charnalia, Maeve Ryan, Mike Rabbat,
+              Michal Drozdzal, Jakob Verbeek, Adriana Romero-Soriano
+            </span>
+            <span class="journal-info">
+              Preprint.
+            </span>
+            <span class="year">2025</span>
+            <!-- Add links when you have them -->
+            
+            <span class="links">
+              <a href="https://arxiv.org/abs/2412.10604">arxiv</a> |
+              <a href="https://github.com/facebookresearch/EvalGIM">code</a>
+            </span>
+           
+          </li>
+
+
+          <li class="article">
+            <div class="pub-header">
+              <span class="title">
+                On Improved Conditioning Mechanisms and Pre-training Strategies for Diffusion Models
+              </span>
+              <span class="tag">FIRST AUTHOR</span>
+            </div>
+            <span class="authors">
+              <strong>Tariq Berrada Ifriqi</strong>, Pietro Astolfi, Melissa Hall, Reyhane Askari-Hemmat,
+              Yohann Benchetrit, Marton Havasi, Matthew Muckley, Karteek Alahari,
+              Adriana Romero-Soriano, Jakob Verbeek, Michal Drozdzal
+            </span>
+            <span class="journal-info">
+              Advances in Neural Information Processing Systems (NeurIPS).
+            </span>
+            <span class="year">2024</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2411.03177">arxiv</a>
+            </span>
+          </li>
+
+          <li class="article">
+            <div class="pub-header">
+              <span class="title">
+                Unlocking Pre-trained Image Backbones for Semantic Image Synthesis
+              </span>
+              <span class="tag">FIRST AUTHOR</span>
+            </div>
+            <span class="authors">
+              <strong>Tariq Berrada</strong>, Jakob Verbeek, Camille Couprie, Karteek Alahari
+            </span>
+            <span class="journal-info">
+              IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
+            </span>
+            <span class="year">2024</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2312.13314">arxiv</a>
+            </span>
+          </li>
+
+          <li class="article">
+            <div class="pub-header">
+              <span class="title">
+                Guided Distillation for Semi-supervised Instance Segmentation
+              </span>
+              <span class="tag">FIRST AUTHOR</span>
+            </div>
+            <span class="authors">
+              <strong>Tariq Berrada</strong>, Camille Couprie, Karteek Alahari, Jakob Verbeek
+            </span>
+            <span class="journal-info">
+              IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).
+            </span>
+            <span class="year">2024</span>
+            <span class="links">
+              <a href="https://arxiv.org/abs/2308.02668">arxiv</a> |
+              <a href="https://github.com/facebookresearch/GuidedDistillation">code</a>
+            </span>
+          </li>
+
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      © <span id="year"></span> Tariq Berrada Ifriqi
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+
+</html>
